@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Portfolio website</title>
+
+    <script src="https://kit.fontawesome.com/a984de6c30.js" crossorigin="anonymous"></script>
+
+    <style>
+
+        *{
+
+            margin:0px;
+
+        }
+
+      ul li{
+
+       list-style:none; 
+
+        }
+
+      .portfolio_text li:hover{
+
+       border-bottom:3px solid black;
+
+      }
+
+      
+
+      .portfolio_text{
+
+          font-weight:bold;
+
+      }
+
+      .container{
+
+         align-items:center;
+
+         width:1000px;
+
+         padding:10px;
+
+         gap:30px;
+
+         display:flex;
+
+         background-color:black;
+
+      }
+
+      
+
+     .list ul li:hover{
+
+         border:2px solid #ff00f1;
+
+         border-radius:5px 5px;
+
+         background-color:#ff00f1;
+
+     }
+
+     
+
+     .list ul{
+
+         font-size:25px;
+
+         color:white;
+
+         padding:8px;
+
+         display:flex;
+
+         gap:10px;
+
+     }
+
+     .list1{
+
+         font-size:25px;
+
+         font-weight:bold;
+
+         padding:1px;
+
+         gap:20px;
+
+         border-radius:80px;
+
+         border:12px solid red;
+
+         background-color:red;
+
+        
+
+     }
+
+     .list ul li{
+
+         padding:10px;
+
+          }
+
+          
+
+    .content{
+
+    width:1020px;
+
+    height:700px;
+
+background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbpjlzgdjXF7-MwY-FCHruaQu4jQrtJgX7Jv--one4aJIz6fZ0svzv13CF&s=10');
+
+background-repeat:no-repeat;
+
+background-size:cover;
+
+align-items:center;
+
+font-weight:bold;
+
+     }  
+
+     .text{
+
+        align-item:center;
+
+      margin-top:240px;
+
+      margin-bottom:100px;
+
+     padding:30px 80px 20px ;
+
+ 
+
+     }  
+
+    input[type='email']{
+
+     border-radius:25px 0px 0px 25px;
+
+     border:1px solid white;
+
+     width:300px;
+
+   
+
+     position: relative;
+
+    }
+
+    input[type='submit']{
+
+    border-radius:0px 25px 25px 0px;
+
+    border:1px solid #ff00f1;
+
+    background-color:#ff00f1;
+
+    position: relative;
+
+    left:-5px;
+
+    }
+
+    .image{
+
+        background-color:black;
+
+        width:1020px;
+
+        height:700px;
+
+        display:flex;
+
+ 
+
+     
+
+    }
+
+    .photo img{
+
+        width:700px;
+
+        height:600px;
+
+    }
+
+    .photo_content{
+
+        font-weight:bold;
+
+        font-size:50px;
+
+        margin-top:170px;
+
+        align-item:center;
+
+        line-height:35px;
+
+        padding-right:60px;
+
+    }
+
+    .img_content{
+
+        line-height:9px;
+
+    }
+
+    #let{
+
+        font-color:white;
+
+        font-size:10px;
+
+        border-radius:90px;
+
+        border:10px solid #ff00f1;
+
+        background-color:#ff00f1;
+
+    }
+
+     .card{
+
+        width:1020px;
+
+        height:450px;
+
+        text-align:center;
+
+        background-color:black;  
+
+    }
+
+      .services{
+
+        font-weight:bold;
+
+        text-align:center;
+
+        font-size:20px;
+
+        background-color:black; 
+
+        }
+
+        .our_services{
+
+            display:flex;
+
+            align-item:center;
+
+            justify-content:space-around;
+
+            gap:5px;
+
+             padding:25px 35px;
+
+        }
+
+        .service1{
+
+           border:5px solid #ff00f1;
+
+           align-item:center;
+
+           background-color:#191919;
+
+           border:5px solid #191919;
+
+           height:250px;
+
+           width:300px;
+
+           }
+
+        .service1 i{
+
+           color:#ff00f1;
+
+           align-item:center;
+
+           padding:10px;
+
+           font-size:50px;
+
+        } 
+
+        .service2{
+
+           border:5px solid #191919;
+
+           align-item:center;
+
+           background-color:#191919;
+
+           height:250px;
+
+           width:300px;
+
+           }
+
+           .service2 i{
+
+           color:#ff00f1;
+
+           align-item:center;
+
+           padding:10px;
+
+           font-size:50px;
+
+        } 
+
+        .service3{
+
+           border:5px solid #191919; 
+
+           background-color:#191919;
+
+           height:250px;
+
+           width:300px;
+
+        } 
+
+        .service3 i{
+
+           color:#ff00f1;
+
+           padding:10px;
+
+           align-item:center; 
+
+           font-size:50px;
+
+           }
+
+         .contact{
+
+             width:1020px;
+
+             height:200px;
+
+             text-align:center;
+
+             background-color:#191919;
+
+             font-weight:bold;
+
+             }
+
+         .Hiring{  
+
+             border-radius:90px;
+
+             border:10px solid #ff00f1;
+
+             background-color:#ff00f1;
+
+         }
+
+         .contact_me{
+
+             font-weight:bold;
+
+             text-align:center;
+
+             width:1020px;
+
+             height:200px;
+
+             background-color:black;
+
+         }
+
+         .logo i{
+
+             color:#ff00f1;
+
+             font-size:60px;
+
+             padding:4px;
+
+             align-item:center;
+
+         } 
+
+         .logo{
+
+             background-color:black;
+
+             height:120px;
+
+         }
+
+    </style>
+
+</head>
+
+<body>
+
+      <div class="container">
+
+          
+
+<div class="portfolio_text"><font color="white" size="20px">port</font><font color="#ff00f1" size="10px">folio</font>
+
+     </div>
+
+<div class="list">
+
+              <ul>
+
+                <li>Home</li>
+
+                <li>About us</li>
+
+                <li>Services</li>
+
+                <li>Skills</li>
+
+                <li>Contact us</li>
+
+              </ul>
+
+</div>
+
+     <div class="list1"><font color="white">Subscribe</font></div>
+
+     
+
+</div>
+
+<div class="content">
+
+  <br><div class="text">
+
+       <font size="5px" color="white">Hello , my name is</font><br>
+
+   <font size="15px" color="white">Prince </font><font size="15px" color="#ff00f1">Kumar</font><br>
+
+   <font size="5px" color="white">I'm a web developer</font><br><br>
+
+    <input type="email" placeholder="enter your email">
+
+    <input type="submit">
+
+   </div>
+
+   <br>
+
+  
+
+</div>
+
+<div class="image">
+
+   <div class="photo">
+
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQk-9x5lFzz2N7D2z3BTYj34BoLBUEPM176t4fU4jr_v8sDi8_cp_oHsSM&s=10" alt="photo">
+
+</div>
+
+<div class="photo_content">
+
+  <font color="white">About Me</font><br><font size="5px" color="white">Developer </font><font color="#ff00f1" size="5px">& Designer</font>
+
+  <br>
+
+  <div class="img_content">
+
+  <font size="3px" color="white">hiiii guy seeking a hard-working guy seeking to be a y thandha ddjjd jdjjsjk jjkkjkjkkkk skfiido dkjfi jdjkwk jfjfjkfk weidjf jskkakjf dhejjj jdjksjja jdjkdkskj jdjdkkskx jfkkdsksk</font><br><br><br>
+
+<span id="let"><font color="white" size="4px">Lets talk</font></span></div>  
+
+   </div>
+
+</div>
+
+<div class="card">
+
+    
+
+    <div class="services">
+
+    <br><font color="white" size="30px" align="center">Our Services</font></div>
+
+    <br>
+
+  <div class="our_services" >
+
+    <div class="service1">
+
+   <i class="fa-regular fa-user"></i><br>
+
+   <font color="white" size="5px">Web development</font><br><font color="#ff95e7">hoi nhi hai kya h to the input and output waveforms to be seen except among other product and output</font><br><br><a href="#"><font color="#9180ff">Read more</font></a>
+
+    </div>
+
+   <div class="service2">
+
+      <i class="fa-solid fa-bars"></i><br>
+
+   <font color="white" size="5px">Web design</font><br><font color="#ff95e7">hoi nhi hai kya h to the input and output waveforms to be seen except among other product and output</font><br><br><a href="#"><font color="#9180ff">Read more</font></a>
+
+   </div>
+
+   
+
+    <div class="service3">
+
+      <i class="fa-regular fa-bell"></i><br>
+
+   <font color="white" size="5px">web development</font><br><font color="#ff95e7">hoi nhi hai kya h to the input and output waveforms to be seen except among other product and output</font><br><br><a href="#"><font color="#9180ff">Read more</font></a>
+
+    </div>
+
+   </div>
+
+    
+
+</div>
+
+<div class="contact">
+
+ <br><br><font color="white" size="10px">Let Me Give A Beautiful Website</font><br><br><span class="Hiring"><font color="white">Hire Me</font></span> 
+
+</div>
+
+<div class="contact_me">
+
+    <br><br><font color="white" size="10px">Prince Kumar</font><br><font color="white">devbhoomi to the same as well as the same ASAP and I want you can deduct GST</font><br>
+
+    
+
+    <div class="logo">
+
+    <br><i class="fa-brands fa-facebook"></i>
+
+<i class="fa-brands fa-square-instagram"></i>
+
+<i class="fa-brands fa-linkedin"></i>
+
+    </div>
+
+</div>
+
+</body>
+
+</html>
+
